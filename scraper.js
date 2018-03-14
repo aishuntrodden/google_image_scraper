@@ -48,8 +48,7 @@ function wait(add, keyword) {
         Jimp.read(add, function (err, lenna) {
             debugger
             if (err) throw err;
-            lenna.resize(256, 256) // resize
-                .quality(60) // set JPEG quality
+            lenna
                 .greyscale() // set greyscale
                 .write(`./images/${i}${keyword}.jpg`); // save
             resolve();
