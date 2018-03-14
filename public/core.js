@@ -46,9 +46,9 @@ scotchTodo.controller('mainController', function ($scope, $http, $window, $rootS
             //
         });
     }
-    $scope.getImagePath = function(imageName) {
+    $scope.getImagePath = function (imageName) {
         debugger
-        return "http://localhost:4000/images/" + imageName;
+        return "http://http://18.219.228.142:4000/images/" + imageName;
     };
 
     $scope.initpage3 = function () {
@@ -56,7 +56,7 @@ scotchTodo.controller('mainController', function ($scope, $http, $window, $rootS
         $http.get('/getpost').success(function (data) {
             debugger
             // path = "../images/"
-            $scope.images = [`0${data.data}.jpg`, `1${data.data}.jpg`];
+            $scope.images = [`0${data.data}.jpg`, `1${data.data}.jpg`, `2${data.data}.jpg`, `3${data.data}.jpg`, `4${data.data}.jpg`, `5${data.data}.jpg`, `6${data.data}.jpg`, `7${data.data}.jpg`, `8${data.data}.jpg`, `9${data.data}.jpg`, `10${data.data}.jpg`, `11${data.data}.jpg`, `12${data.data}.jpg`, `13${data.data}.jpg`, `14${data.data}.jpg`];
             console.log("data ", data);
             debugger
         });
