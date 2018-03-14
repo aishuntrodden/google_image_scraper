@@ -48,7 +48,7 @@ scotchTodo.controller('mainController', function ($scope, $http, $window, $rootS
     }
     $scope.getImagePath = function (imageName) {
         debugger
-        return "http://http://18.219.228.142:4000/images/" + imageName;
+        return "http://18.219.228.142:4000/images/" + imageName;
     };
 
     $scope.initpage3 = function () {
