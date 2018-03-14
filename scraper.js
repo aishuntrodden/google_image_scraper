@@ -22,9 +22,9 @@ function start(req) {
             keyword: keyword,
             num: 15,
             detail: true,
-            nightmare: {
-                show: true
-            }
+            // nightmare: {
+            //     show: true
+            // }
         })
         .then(function (res) {
             console.log('first 10 results from google', res);
